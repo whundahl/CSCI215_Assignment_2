@@ -1,4 +1,4 @@
-# CSCI215_Assignment_2
+# CSCI215_Assignment_2_William Hundahl 
 
 ## Due 10 Oct 2017 @ 11:59 pm
 

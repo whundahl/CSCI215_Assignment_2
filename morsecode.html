@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div>
+
+
+    <button onclick="processText()">Click to verify email address</button>
+
+
+
+</Div>
+<script>
+    var alphabet = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
+    var morris = [".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-.",".-..","--","-.","---",".--.","--.-",".-.","...",
+        ",-","..-","...-",".--","-..-","-.--","--.."];
+
+    var input = prompt("Enter Morris Code", 140);
+    //document.write(input)
+    function processText() {
+        input.toLowerCase();
+        var inputArray = [];
+        inputArray = input.split("");
+        //document.write(inputArray.toString());
+        var count = 0;
+        for (var i = 0; i < inputArray.length; i++) {
+            if (inputArray[i] == "@" || inputArray[i] == ".") {
+                count ++;
+            }
+        }
+        if(count >= 2){
+            document.write(":)");
+        }
+        else
+            document.write(":(");
+        document.getElementById("output").innerHTML = "";
+    }
+</script>
+<DIV>
+    <p id="output"></p>
+</DIV><button type="button">Click Me!</button>
+
+
+</body>
+</html>
+
+
+A .-	G --.	M --	S ...	Y -.--
+B -...	H ....	N -.	T -	Z --..
+C -.-.	I ..	O ---	U ..-
+D -..	J .---	P .--.	V ...-
+E .	K -.-.	Q --.-	W .--
+F ..-.	L .-..	R .-.	X -..-
