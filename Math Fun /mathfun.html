@@ -20,51 +20,7 @@
     </tr>
 </table>
 
-<script>
-    function max(nums) {
-        sortNums = nums.sort(function(a, b){return a-b});
-        maximum = sortNums[sortNums.length-1];
-        return maximum;
-    }
-    function min(nums) {
-        sortNums = nums.sort(function(a, b){return b-a});
-        minimum = sortNums[sortNums.length-1];
-        return minimum;
-    }
-    function mean(nums) {
-        var total = 0;
-        for(i=0; i<nums.length;i++){
-            total += nums[i];
-        }
-        average = total/nums.length;
-        return average;
-    }
-    function median(nums) {
-        sortNums = nums.sort(function(a, b){return a-b});
-        var index = sortNums.length / 2;
-        // If number of elements is an odd number, return half of the amount, rounded up.
-        if(nums.length % 2 != 0) {
-            med = sortNums[Math.floor(index)];
-        }
-        // If number of elements is an even number, return the average of the two median numbers.
-        else {
-            med = (sortNums[index] + sortNums[index-1]) / 2;
-        }
-        return med;
-    }
-    var nums = [];
-    var userNum;
-    do {
-        userNum = prompt("Please enter a positive number, -1 to quit.");
-        userNum = parseInt(userNum);
-        nums.push(userNum);
-    } while (isNaN(userNum) == true || userNum != -1)
-    nums.pop();
-    document.getElementById("max").innerHTML = max(nums);
-    document.getElementById("min").innerHTML = min(nums);
-    document.getElementById("mean").innerHTML = mean(nums);
-    document.getElementById("median").innerHTML = median(nums);
-</script>
+<script src="mf.js"></script>
 
 </body>
 </html>
