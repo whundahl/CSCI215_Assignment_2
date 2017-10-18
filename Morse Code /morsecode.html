@@ -2,34 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <script src="../js%20files/morsecodeJava.js"></script>
-    <title>Morse Code</title>
+    <script src="mc.js"></script>
+    <title>Morse Code Translator</title>
 </head>
 
 
 
 
-<div >
-    <label>Enter a Sentence:</label>
-    <input type="text" id="Sentence">
-
+<div align="center" >
+   <label>Enter English to Translate Into Morse Code:</label>
+        <input title="morse code input" type="text" id="entry">
 </div>
 
-<br/>
 
-<div>
-    <input type="button" value="Translate" onClick="translate2()">
+<div align="center">
+    <input type="button" value="Translate" onClick="translate()">
 </div>
-
-<br/>
-
-<div>
-    <output id ="output"> </output>
-
-</div>
-
-</body>
-</html>
 
 <!--
 A .-	G --.	M --	S ...	Y -.--
@@ -39,3 +27,12 @@ D -..	J .---	P .--.	V ...-
 E .	K -.-.	Q --.-	W .--
 F ..-.	L .-..	R .-.	X -..-
 -->
+
+<div align="center">
+    <output id ="output"> </output>
+
+</div>
+
+</body>
+</html>
+

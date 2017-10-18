@@ -1,36 +1,23 @@
 
-function translate2() {
-    var theletter = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ .,?:-!";
+function translate() {
 
+    var englishalphabet = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","A",
+        "B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
 
-    var morseObj = [".-","-...","-.-.","-..",".","..-.",
-        "--.","....","..",".---","-.-",".-..",
+    var morsearray = [".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-",".-..",
         "--","-.","---",".--.","--.-",".-.",
         "...","-","..-","...-",".--","-..-",
         "-.--","--..",".-","-...","-.-.","-..",
         ".","..-.","--.","....","..",".---",
         "-.-",".-..","--","-.","---",".--.",
         "--.-",".-.","...","-","..-","...-",
-        ".--","-..-","-.--","--.."," ",".-.-.-",
-        "--..--","..--..","---...","-....-","!"];
+        ".--","-..-","-.--","--.."];
 
-    var theSent = document.getElementById("Sentence").value;
+    var Sent = document.getElementById("entry").value;
 
 
-    var userInput = theSent;
-    var output = "";
-    for (var count = 0; count < userInput.length; count++) {
-        var theChar = userInput.charAt(count);
-        for (var i = 0; i < theletter.length; i++) {
-            if (theChar == theletter.charAt(i)) {
-                output += morseObj[i] ;
-                break;
-            }
-        }
-
-    }
-
-    document.getElementById("output").innerHTML = output + " " + theSent ;
-
+   //Trying to figure out how to use the input value entered
+    // into the the html form to align with first alphabet array and then use the value from
+    // that array to equal the translated array with the morse code in it.
 
 }
