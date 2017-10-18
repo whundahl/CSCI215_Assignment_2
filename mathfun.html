@@ -3,59 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <title>Math Fun</title>
-
 </head>
 <body>
-<table cellpadding="3" border="1">
-
+<table style="width:100%">
     <tr>
-        <th>Math Function</th>
-        <th>Result</th>
+        <td>Max</td>
+        <td>Min</td>
+        <td>Mean</td>
+        <td>Median</td>
     </tr>
     <tr>
-        <td>Max:</td>
-        <td id="theValue0"></td>
-    </tr>
-    <tr>
-        <td>Min:</td>
-        <td id="theValue1"></td>
-    </tr>
-    <tr>
-        <td>Mean:</td>
-        <td id="theValue2"></td>
-    </tr>
-
-    <tr>
-        <td>Median:</td>
-        <td id="theValue3"></td>
-    </tr>
-
-    <tr>
-        <td>Number of Odds:</td>
-        <td id="theValue4"></td>
-    </tr>
-    <tr>
-        <td>Number of Evens:</td>
-        <td id="theValue5"></td>
-    </tr>
-    <tr>
-        <td>Number of Primes:</td>
-        <td id="theValue6"></td>
-    </tr>
-    <tr>
-        <td>Number of Powers:</td>
-        <td id="theValue7"></td>
+        <td id="max">0</td>
+        <td id="min">0</td>
+        <td id="mean">0</td>
+        <td id="median">0</td>
     </tr>
 </table>
-<br/>
-<output >The Numbers Enter:</output>
 
-<script src="mathfunJava.js"></script>
-<div>
-    <script id="input"> calculate();</script>
-</div>
-
-
+<script>
+    function max(nums) {
+        sortNums = nums.sort(function(a, b){return a-b});
+        maximum = sortNums[sortNums.length-1];
+        return maximum;
+    }
+    function min(nums) {
+        sortNums = nums.sort(function(a, b){return b-a});
+        minimum = sortNums[sortNums.length-1];
+        return minimum;
+    }
+    function mean(nums) {
+        var total = 0;
+        for(i=0; i<nums.length;i++){
+            total += nums[i];
+        }
+        average = total/nums.length;
+        return average;
+    }
+    function median(nums) {
+        sortNums = nums.sort(function(a, b){return a-b});
+        var index = sortNums.length / 2;
+        // If number of elements is an odd number, return half of the amount, rounded up.
+        if(nums.length % 2 != 0) {
+            med = sortNums[Math.floor(index)];
+        }
+        // If number of elements is an even number, return the average of the two median numbers.
+        else {
+            med = (sortNums[index] + sortNums[index-1]) / 2;
+        }
+        return med;
+    }
+    var nums = [];
+    var userNum;
+    do {
+        userNum = prompt("Please enter a positive number, -1 to quit.");
+        userNum = parseInt(userNum);
+        nums.push(userNum);
+    } while (isNaN(userNum) == true || userNum != -1)
+    nums.pop();
+    document.getElementById("max").innerHTML = max(nums);
+    document.getElementById("min").innerHTML = min(nums);
+    document.getElementById("mean").innerHTML = mean(nums);
+    document.getElementById("median").innerHTML = median(nums);
+</script>
 
 </body>
 </html>
