@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e23cce7e-fe34-4da6-9f64-a5e658d65169" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Math Fun /mathfun.html" afterPath="$PROJECT_DIR$/Math Fun /mathfun.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Morse Code /mc.js" afterPath="$PROJECT_DIR$/Morse Code /mc.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Morse Code /morsecode.html" afterPath="$PROJECT_DIR$/Morse Code /morsecode.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Random Pic /randompic.html" afterPath="$PROJECT_DIR$/Random Pic /randompic.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Random Pic /rp.js" afterPath="$PROJECT_DIR$/Random Pic /rp.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -63,7 +59,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="randompic.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="randompic.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Random Pic /randompic.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
@@ -73,11 +69,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="rp.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="rp.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Random Pic /rp.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            <state relative-caret-position="285">
+              <caret line="19" column="29" lean-forward="true" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -239,12 +235,12 @@
       <workItem from="1508288814960" duration="2426000" />
       <workItem from="1508330778907" duration="4127000" />
       <workItem from="1508344975791" duration="3371000" />
-      <workItem from="1508348759532" duration="44000" />
+      <workItem from="1508348759532" duration="171000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10352000" />
+    <option name="totallyTimeSpent" value="10479000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="86" y="24" width="1354" height="827" extended-state="0" />
@@ -451,18 +447,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Random Pic /randompic.html">
+    <entry file="file://$PROJECT_DIR$/Random Pic /rp.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="37" lean-forward="false" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+        <state relative-caret-position="285">
+          <caret line="19" column="29" lean-forward="true" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Random Pic /rp.js">
+    <entry file="file://$PROJECT_DIR$/Random Pic /randompic.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        <state relative-caret-position="225">
+          <caret line="15" column="37" lean-forward="false" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
           <folding />
         </state>
       </provider>
